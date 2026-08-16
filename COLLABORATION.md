@@ -2,14 +2,15 @@
 
 > 项目目标：共同构建并部署回森新用户体验健康看板，最终运行在快手内网服务器。
 >
-> 目标仓库：`https://github.com/MOYi63/fuhua-EHM`
+> 目标仓库：`https://github.com/MOYi63/fuhua-EHM-`
+>
+> 协作者：zhangmingyang（页面/交互） · wangxinlei06（数据/部署）
 
 ## 1. 当前文件结构
 
 ```text
-体验监控/
-├── dashboard/
-│   └── index.html       # 当前看板页面，纯 HTML/CSS/JavaScript
+fuhua-EHM-/
+├── index.html           # 看板页面，纯 HTML/CSS/JavaScript
 └── COLLABORATION.md     # 双人协作与部署说明
 ```
 
@@ -50,8 +51,8 @@
 `main` 只保留可展示、可部署版本。每个需求从 `main` 创建独立分支：
 
 ```bash
-git clone git@github.com:MOYi63/fuhua-EHM.git
-cd fuhua-EHM
+git clone https://github.com/MOYi63/fuhua-EHM-.git
+cd fuhua-EHM-
 
 git checkout main
 git pull --ff-only origin main
@@ -222,7 +223,7 @@ git rebase --abort
 
 ## 9. 当前阻塞项
 
-当前工作目录还不是 `fuhua-EHM` 的 Git clone，且本机无法完成目标 GitHub 仓库认证：
+当前工作目录是 `fuhua-EHM-` 的本地仓库，远程已指向 `https://github.com/MOYi63/fuhua-EHM-.git`。
 
 - HTTPS 访问需要 GitHub 登录凭证
 - SSH 已有本机密钥，但尚未确认该密钥是否绑定了有仓库权限的 GitHub 账号
@@ -230,20 +231,16 @@ git rebase --abort
 
 继续上传前，需要完成以下任一项：
 
-1. 配置有 `MOYi63/fuhua-EHM` 写权限的 GitHub SSH Key；或
-2. 在本机配置 GitHub CLI / HTTPS credential；或
+1. 使用 `gh auth login` 完成 GitHub CLI 认证（已完成）；或
+2. 配置有 `MOYi63/fuhua-EHM-` 写权限的 GitHub SSH Key；或
 3. 由仓库管理员邀请当前 GitHub 账号为 Collaborator。
 
 认证完成后，在本目录执行：
 
 ```bash
-git clone git@github.com:MOYi63/fuhua-EHM.git repo
-cp dashboard/index.html repo/dashboard/index.html
-cp COLLABORATION.md repo/COLLABORATION.md
-cd repo
-git add dashboard/index.html COLLABORATION.md
-git commit -m "feat: add user experience health dashboard"
-git push origin main
+# 仓库已初始化并提交到本地 fuhua-ehm-dashboard/ 目录
+cd fuhua-ehm-dashboard
+git push -u origin main
 ```
 
 如果仓库已有 `dashboard/` 目录，请先检查并合并原文件，不要盲目覆盖。
