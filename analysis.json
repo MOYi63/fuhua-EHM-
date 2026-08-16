@@ -13846,5 +13846,210 @@
         }
       ]
     }
+  ],
+  "stageReasons": [
+    {
+      "stage": "进入产品",
+      "nextStage": "内容探索",
+      "reached": 11,
+      "notContinued": 0,
+      "reasonCounts": {},
+      "users": []
+    },
+    {
+      "stage": "内容探索",
+      "nextStage": "找歌选内容",
+      "reached": 11,
+      "notContinued": 2,
+      "reasonCounts": {
+        "当次中断后恢复": 2
+      },
+      "users": [
+        {
+          "uid": "4358721294",
+          "lastTime": "12:11:48",
+          "lastDate": "2026/8/8",
+          "lastPage": "个人主页作品feed-播放按钮",
+          "lastKind": "任务事件",
+          "exits": 29,
+          "hasRecovery": true,
+          "laterActivity": false,
+          "reEntries": 513,
+          "reason": "当次中断后恢复",
+          "durationMin": 73.27,
+          "status": "反复尝试后完成"
+        },
+        {
+          "uid": "4356761051",
+          "lastTime": "03:12:44",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-光音首页feed页页面停留时长（0.05min)",
+          "lastKind": "页面展现",
+          "exits": 10,
+          "hasRecovery": true,
+          "laterActivity": false,
+          "reEntries": 21,
+          "reason": "当次中断后恢复",
+          "durationMin": 14.17,
+          "status": "当次中断后恢复"
+        }
+      ]
+    },
+    {
+      "stage": "找歌选内容",
+      "nextStage": "录音准备",
+      "reached": 9,
+      "notContinued": 2,
+      "reasonCounts": {
+        "反复尝试但仍未继续": 1,
+        "离开后七日内未恢复": 1
+      },
+      "users": [
+        {
+          "uid": "4361215519",
+          "lastTime": "19:34:24",
+          "lastDate": "2026/8/9",
+          "lastPage": "离开-房间点歌页面停留时长（0.25min)",
+          "lastKind": "页面展现",
+          "exits": 21,
+          "hasRecovery": false,
+          "laterActivity": false,
+          "reEntries": 4,
+          "reason": "反复尝试但仍未继续",
+          "durationMin": 12.5,
+          "status": "反复尝试后完成"
+        },
+        {
+          "uid": "4356976622",
+          "lastTime": "15:30:05",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-点歌页页面停留时长（0.06min)",
+          "lastKind": "页面展现",
+          "exits": 1,
+          "hasRecovery": false,
+          "laterActivity": false,
+          "reEntries": 1,
+          "reason": "离开后七日内未恢复",
+          "durationMin": 22.83,
+          "status": "反复尝试后完成"
+        }
+      ]
+    },
+    {
+      "stage": "录音准备",
+      "nextStage": "录音创作",
+      "reached": 8,
+      "notContinued": 0,
+      "reasonCounts": {},
+      "users": []
+    },
+    {
+      "stage": "录音创作",
+      "nextStage": "编辑完成",
+      "reached": 8,
+      "notContinued": 2,
+      "reasonCounts": {
+        "离开后七日内未恢复": 1,
+        "反复尝试但仍未继续": 1
+      },
+      "users": [
+        {
+          "uid": "4067194969",
+          "lastTime": "09:25:50",
+          "lastDate": "2026/8/8",
+          "lastPage": "生产录音页-ACTIVITY_BANNER_SEAR",
+          "lastKind": "元素展现",
+          "exits": 1,
+          "hasRecovery": false,
+          "laterActivity": false,
+          "reEntries": 2,
+          "reason": "离开后七日内未恢复",
+          "durationMin": 18.97,
+          "status": "反复尝试后完成"
+        },
+        {
+          "uid": "4364163023",
+          "lastTime": "21:03:31",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-生产录音页页面停留时长（1.6min)",
+          "lastKind": "页面展现",
+          "exits": 3,
+          "hasRecovery": false,
+          "laterActivity": true,
+          "reEntries": 3,
+          "reason": "反复尝试但仍未继续",
+          "durationMin": 34.0,
+          "status": "反复尝试后完成"
+        }
+      ]
+    },
+    {
+      "stage": "编辑完成",
+      "nextStage": "互动关系",
+      "reached": 6,
+      "notContinued": 4,
+      "reasonCounts": {
+        "反复尝试但仍未继续": 2,
+        "当日离开后跨日恢复": 2
+      },
+      "users": [
+        {
+          "uid": "4365126705",
+          "lastTime": "21:20:31",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-预览编辑页页面停留时长（0.44min)",
+          "lastKind": "页面展现",
+          "exits": 7,
+          "hasRecovery": false,
+          "laterActivity": true,
+          "reEntries": 7,
+          "reason": "反复尝试但仍未继续",
+          "durationMin": 10.17,
+          "status": "反复尝试后完成"
+        },
+        {
+          "uid": "4358721294",
+          "lastTime": "11:36:12",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-预览编辑页页面停留时长（0.78min)",
+          "lastKind": "页面展现",
+          "exits": 3,
+          "hasRecovery": false,
+          "laterActivity": false,
+          "reEntries": 3,
+          "reason": "反复尝试但仍未继续",
+          "durationMin": 73.27,
+          "status": "反复尝试后完成"
+        },
+        {
+          "uid": "4360315963",
+          "lastTime": "10:35:38",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-预览编辑页页面停留时长（0.08min)",
+          "lastKind": "页面展现",
+          "exits": 8,
+          "hasRecovery": true,
+          "laterActivity": true,
+          "reEntries": 7,
+          "reason": "当日离开后跨日恢复",
+          "durationMin": 13.36,
+          "status": "反复尝试后完成"
+        },
+        {
+          "uid": "4363041884",
+          "lastTime": "18:38:29",
+          "lastDate": "2026/8/8",
+          "lastPage": "离开-预览编辑页页面停留时长（0.0min)",
+          "lastKind": "页面展现",
+          "exits": 43,
+          "hasRecovery": true,
+          "laterActivity": true,
+          "reEntries": 42,
+          "reason": "当日离开后跨日恢复",
+          "durationMin": 26.83,
+          "status": "反复尝试后完成"
+        }
+      ]
+    }
   ]
 }
